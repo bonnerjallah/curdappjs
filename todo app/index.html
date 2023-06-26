@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Post App</title>
+
+
+</head>
+<body>
+    
+    <div class="app">
+        <h1 style="margin-bottom: 0;">DA APP</h1>
+        <hr style="border: 2px solid rgb(123, 66, 66); width: 100%; margin-bottom: 20px; margin-top: 0;">
+        <nav>
+            <div><a href="../grocery/index.html"><i class="fa-solid fa-basket-shopping"></i></a></div>
+        </nav>
+        <div class="modalbox" id="modalbox">
+           <form id="form" class="form">
+                <input type="date" class="date" id="date">
+                <textarea name="" id="input" cols="30" rows="5"></textarea>
+                <button class="bttn" id="bttn" type="submit">ADD</button>
+                <span id="home"><i class="fa-solid fa-house"></i></span>
+            </form>
+        </div>
+        <h4><i class="fa-solid fa-clipboard-check"></i> TODO LIST</h4>
+        <div id="addNew">
+            <span>Add New Task</span>
+            <i class="fa-sharp fa-solid fa-plus"></i>
+        </div>
+        <h5 class="text-center my-3">Tasks</h5>
+
+        <div id="tasks">
+           
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

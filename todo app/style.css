@@ -1,0 +1,162 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:  rgb(224, 234, 225);
+    height: 100vh;
+    display: flex;
+}
+
+.app{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(281deg, rgba(59,127,136,1) 0%, rgba(141,108,132,1) 100%);
+    margin: auto;
+    position: relative;
+    overflow-Y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.app > h1{
+    text-align: center;
+    margin-top: 0;
+}
+
+#addNew {
+    background-color: #6b2734;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.fa-plus{
+    background-color: #eabcc6;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.text-center {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#tasks{
+    display: grid;
+    gap: 10px;
+}
+
+#tasks div{
+ background-color:#b77583;
+ border: 2px solid rgb(5, 5, 5);
+ padding: 5px;
+ border-radius: 6px;
+ display: grid;
+ gap: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 80%;
+    inset: 0;
+    margin: auto;    
+}
+
+.options i {
+    cursor: pointer;
+    font-size: .9rem;
+}
+  
+.fa-house:hover{
+    color: rgb(187, 187, 232);
+}
+
+.fa-pen-to-square:hover{
+    color: lightblue;
+}
+
+.fa-trash-can:hover{
+    color: rgb(243, 10, 10);
+}
+
+.date {
+    background-color: #deb2ba;
+    border: none;
+    border-radius: 3px;
+}
+
+.modalbox{
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color:#76444f;
+    width: 87%;
+    visibility: hidden;
+    height: 180px;
+}
+
+.modalboxdisplay{ 
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color:#76444f;
+    width: 87%;
+    visibility: visible;    
+    animation: modalbox  500ms ease-in-out  forwards; 
+} 
+
+@keyframes modalbox{
+    0%{
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    100%{
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+input{
+    width: 40%;
+}
+
+.bttn{
+    width: 25%;
+    background-color: black;
+    color: rgb(249, 186, 186);
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bttn:hover{
+    background-color:#eabcc6;
+    color: #6b2734;
+    transform: scale(1.2);
+}
+
+.fa-basket-shopping{
+    color: rgb(21, 24, 24);
+    font-size: 1.5rem;
+    float: right;
+    margin-top: 0;
+}
+
+.fa-basket-shopping:hover {
+    color: aqua;
+}
+
